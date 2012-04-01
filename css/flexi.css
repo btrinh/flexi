@@ -1,0 +1,22 @@
+.flexi-wrapper {
+  padding: 10px;
+  background: #EEEEEE;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #A0A0A0;
+}
+
+.row-fluid {
+  margin-bottom: 1%;
+}
+.section-header {
+  padding: 20px 40px;
+}
+
+header .hero-unit {
+  box-shadow: 0 0 5px #A0A0A0;
+}
+header .download {
+  position: absolute;
+  top: 60px;
+  right: 149px;
+}

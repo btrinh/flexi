@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>btrinh/flexi @ GitHub</title>
+  <link href="css/flexi.css" rel="Stylesheet" />
+  <link href="css/bootstrap.min.css" rel="Stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="hero-unit">
+      <h1><a href="https://github.com/btrinh/flexi">Flexi</a> 
+        <small>by <a href="https://github.com/btrinh">btrinh</a></small>
+      </h1>
+      <p>A fluid slide carousel</p>
+      <a href="https://github.com/btrinh/flexi">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" 
+        src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" 
+        alt="Fork me on GitHub" />
+      </a>
+      <div class="download">
+        <a href="https://github.com/btrinh/flexi/zipball/master">
+          <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+        <a href="https://github.com/btrinh/flexi/tarball/master">
+          <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="section-header">
+          <h2>Example 1: <small>Default Settings</small></h2>
+        </div>
+
+        <div id="example1">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+          <img src="img/200x300.gif">
+        </div>
+      </div>
+
+    <div class="row-fluid">
+      <div class="section-header">
+        <h2>Example 2: <small>No navigation</small></h2>
+      </div>
+
+      <div id="example2">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+        <img src="img/300x200.gif">
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="section-header">  
+        <h2>Example 3: <small>Limited number (4) of visible slides; 
+            No autoplay</small>
+        </h2>
+      </div>
+
+      <div id="example3">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+        <img src="img/200x300.gif">
+      </div>
+    </div>
+
+    <h2>Download</h2>
+    <p>You can download this project in either
+      <a href="https://github.com/btrinh/flexi/zipball/master">zip</a> or
+      <a href="https://github.com/btrinh/flexi/tarball/master">tar formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/btrinh/flexi</pre>
+    </p>
+
+    <footer class="footer">
+      get the source code on GitHub : <a href="https://github.com/btrinh/flexi">btrinh/flexi</a>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script src="js/jquery.flexi.min.js"></script>
+  <script>
+    $(function(){
+      $("#example1").flexi();
+      $("#example2").flexi({ nav: false});
+      // no auto rotate
+      $("#example3").flexi({ auto: false, visible: 4});
+    }); 
+  </script>
+</body>
+</html>
